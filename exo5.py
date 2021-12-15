@@ -2,9 +2,9 @@ def salary(hrs, wage):
     pay = 0.0
     if hrs <= 160:
         pay += hrs * wage
-    if hrs - 160 != 0 and hrs <= 200:
+    if 160 < hrs <= 200:
         pay += (hrs - 160) * (wage * 1.25)
-    if hrs - 200 != 0:
+    if hrs > 200:
         pay += (hrs - 200) * (wage * 1.5)
     return pay
 

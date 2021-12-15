@@ -1,7 +1,7 @@
 # len() rewrite...
-def length(list):
+def length(string):
     len = 0
-    for _ in list:
+    for _ in string:
         len += 1
     return len
 
