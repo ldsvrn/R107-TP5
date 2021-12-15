@@ -4,7 +4,8 @@ import datetime
 path = input("1. Entrez un path: ")
 path2 = input("2. Entrez un path: ")
 
-def fileInfo(path):
+
+def fileinfo(path):
     if not os.path.isfile(path):
         raise Exception(f"Le fichier {path} n'existe pas!")
 
@@ -13,5 +14,5 @@ def fileInfo(path):
           f"{datetime.datetime.fromtimestamp(milis)} (unix milis: {milis})")
 
 
-fileInfo(path)
-fileInfo(path2)
+fileinfo(path)
+fileinfo(path2)

@@ -16,7 +16,7 @@ def voyelle(string):
 
 
 def search(string, pattern):
-    for i, item in enumerate(string):
+    for i in range(length(string)):
         if string[i:i + length(pattern)] == pattern:
             return i
     return -1

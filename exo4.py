@@ -10,7 +10,7 @@ toGive = [0] * len(available)
 # good old bruteforce
 while given != money:
     for i, item in enumerate(available):
-        if (money - given)/item >= 1:
+        if (money - given) / item >= 1:
             given += item
             toGive[i] += 1
             break

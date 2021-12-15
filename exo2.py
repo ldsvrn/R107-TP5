@@ -1,6 +1,6 @@
 notes = []
 for i in range(5):
-    notes.append(input(f"Veuillez entrer la note du module {i+1} et le coefficient correspondant: "))
+    notes.append(input(f"Veuillez entrer la note du module {i + 1} et le coefficient correspondant: "))
 
 for i, item in enumerate(notes):
     temp = item.split(" ")
@@ -15,4 +15,4 @@ for note, coef in notes:
     haut += note * coef
     bas += coef
 
-print(f"La moyenne est de {round(haut/bas, 3)}")
+print(f"La moyenne est de {round(haut / bas, 3)}")
