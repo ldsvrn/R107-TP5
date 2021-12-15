@@ -5,8 +5,8 @@ while True:
         continue
     break
 
-available, toGive, given = [100, 50, 10, 2, 1], [0] * len(available), 0
-
+available, given = [100, 50, 10, 2, 1], 0
+toGive = [0] * len(available)
 # good old bruteforce
 while given != money:
     for i, item in enumerate(available):
